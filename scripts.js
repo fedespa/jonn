@@ -6,7 +6,7 @@ const sunOrMoon = d.querySelector(".sunOrMoon"), img = d.querySelector(".contain
 
 async function getData(){
     const country = d.querySelector(".searchInput").value;
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${country}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${country}&aqi=no`;
     try {
         let res = await fetch(url),
             json = await res.json();
