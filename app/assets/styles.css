@@ -1,0 +1,89 @@
+body {
+    min-height: 100dvh;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #111;
+    color: white;
+    font-family: Poppins;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+.loader {
+    margin: 1rem auto;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+
+.error {
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    background-color: rgb(251, 61, 61);
+}
+
+.header {
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: #111;
+}
+
+.header > * {
+    margin: 1rem auto;
+}
+
+.form-search {
+    margin: auto;
+    text-align: center;
+
+    input {
+        display: block;
+        margin: auto;
+        padding: 0.25rem;
+        border-radius: .25rem;
+        font-size: 1rem;
+        border: 1px solid white;
+    }
+}
+
+.post-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80%;
+    background-color: #222;
+    border-radius: 6px;
+
+    p {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.grid-fluid {
+    margin: 1rem auto;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+}
+
+img {
+    width: 100%;
+}
+
+.post-page {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80%;
+    background-color: #222;
+
+    aside {
+        margin: auto;
+        width: 60%;
+        text-align: center;
+    }
+}
