@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    font-family: Roboto;
+}
+
+img {
+    width: 100%;
+}
+
+#container {
+    margin: auto;
+    width: 320px;
+    height: fit-content;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #3f7d76 100%);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.searchInput {
+    outline: none;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.searchBtn {
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #48e;
+    border: 1px solid transparent;
+    transition: border-color .22s;
+}
+
+.searchBtn:hover {
+    border-color: black;
+}
+
+.sunOrMoon {
+    font-size: 150px;
+    margin: 0;
+}
+
+.show {
+    animation: show both 1.6s;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.sun {
+    color: gold;
+}
+
+.moon {
+    color:#f2f2f2;
+}
+
+.temperature {
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.country {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.city {
+    margin: 0;
+    color: black;
+}
+
+.country-data {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-sizing: border-box;
+    margin-top: 6px;
+}
+
+.div-wind,.div-humidity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.humidity, .wind {
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    font-size: 32px;
+}
+
+.div-first-span {
+    font-size: 22px;
+}
+
+.div-second-span {
+    font-size: 12px;
+}
+
+.div-region {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_img {
+    width:100px;
+    height: 100px;
+}
